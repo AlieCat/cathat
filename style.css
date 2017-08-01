@@ -159,7 +159,7 @@ form {
   list-style-type: none;
   margin: 0;
   max-height: 101%;
-  overflow:scroll;
+  overflow-y:scroll;
   padding: 0;
 }
 
