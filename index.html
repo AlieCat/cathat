@@ -42,7 +42,7 @@
     <script type="text/javascript"> //creates the board when button is clicked
     function createboard (a) {
         var socket = io();
-        //send message to server
+        console.log('send message to server');
         socket.emit('pickboard', a);
     }
     </script>
