@@ -8,8 +8,6 @@ server.connection({
 
 var io = require('socket.io')(server.listener);
 
-server.start();
-
 server.register([require('inert'), require('hapi-error')], function() {
   server.route([
     { method: 'GET', path: '/', handler: { file: 'index.html' } },
