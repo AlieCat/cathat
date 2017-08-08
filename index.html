@@ -6,8 +6,26 @@
   <link rel="icon" type="image/png" href="https://www.dwyl.com/img/favicon.ico">
   </head>
   <body>
+  
+  <div class="menu">
+        <button id="menu" class="button" onclick="document.getElementById('fullmenu').style.display = 'flex';document.getElementById('menu').style.display = 'none';">&#x265b;</button>
+        
+        <div id="fullmenu">
+            <button class="button">New Game</button>
+            <button class="button">Save Game</button>
+            <button class="button">Undo</button>
+            <button class="button">Redo</button>
+            <button class="button">Scoreboard</button>
+            <button class="button">Clear Chat</button>
+            <button class="button">New Room</button>
+            <button class="button" onclick="document.getElementById('fullmenu').style.display = 'none';document.getElementById('menu').style.display = 'flex';">Hide Menu</button>
+        </div>
+        
+    </div>
+  
   <div class="whole">
         <div class="board">
+
         </div>
 	<div class="buttons">
                 <button id="3x3" class="button" onclick="createboard(3);">

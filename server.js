@@ -23,6 +23,11 @@ server.register([require('inert'), require('hapi-error')], function() {
     },
     {
       method: 'GET',
+      path: '/loadGame',
+      handler: require('./lib/load_messages').loadGame,
+    },
+    {
+      method: 'GET',
       path: '/elm',
       handler: {
         file: './elm/index.html',
@@ -46,7 +51,11 @@ server.register([require('inert'), require('hapi-error')], function() {
 
   server.start(function() {
     require('./lib/chat').init(server.listener, function() {
-      console.log('REDISCLOUD_URL:redis-13580.c11.us-east-1-2.ec2.cloud.redislabs.com:13580', process.env.REDISCLOUD_URL);
+      //console.log('REDISCLOUD_URL:redis-13580.c11.us-east-1-2.ec2.cloud.redislabs.com:13580', process.env.REDISCLOUD_URL);
+      console.log(
+        'Feeling Chatty?',
+        'listening on: http://127.0.0.1:' + process.env.PORT
+      );
 
     });
   });

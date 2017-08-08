@@ -15,6 +15,7 @@
   display:flex;
   align-items:center;
   justify-content:space-around;
+  z-index:0;
 }
 .board {
     background-color: #1C90F3;
@@ -54,6 +55,43 @@
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+}
+
+.menu{    
+    float:left;
+    z-index:1;
+}
+
+#fullmenu{
+    display:none; 
+    height:95vh;
+    flex-direction:column; 
+    justify-content:space-around;
+    z-index:1; position:absolute; 
+    padding-left:10px;padding-right:10px; 
+    padding-top:-10px;
+    padding-bottom:20px;
+    background-color:#1C90F3;
+    border-radius:0px 0px 15px 15px;
+    box-shadow: 9px 9px #999;
+}
+
+.menu > .button{
+    border-top-left-radius:0px;
+    font-size:36px;
+    background-color:#AFD8FA;
+    position:absolute !important;
+    top:-10px !important;
+    left:-15px !important;
+}
+
+.menu > .button:hover{
+    border-top-left-radius:0px;
+    font-size:36px;
+    background-color: #cce5f9;
+    position:absolute !important;
+    top:0px !important;
+    left:0px !important;
 }
 
 .button:hover {background-color: #cce5f9}
