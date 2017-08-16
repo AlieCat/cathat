@@ -11,7 +11,7 @@
         <button id="menu" class="button" onclick="document.getElementById('fullmenu').style.display = 'flex';document.getElementById('menu').style.display = 'none';">&#x265b;</button>
         
         <div id="fullmenu">
-            <button class="button">New Game</button>
+            <button onclick="clearboard();" class="button">New Game</button>
             <button class="button">Save Game</button>
             <button class="button">Undo</button>
             <button class="button">Redo</button>
@@ -24,7 +24,7 @@
     </div>
   
   <div class="whole">
-        <div class="board">
+        <div class="board" id="board">
 
         </div>
 	<div class="buttons">
