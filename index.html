@@ -72,6 +72,9 @@
       console.log('your turn')
       if (event.target.id){
         g.playMove(event.target.id);
+        console.log('made move '+event.target.id);
+        makeAMove(event.target.id);
+
         
       }
     }
